@@ -44,6 +44,7 @@ class App extends Component {
     const GlobalStyle = createGlobalStyle`
     @import url("${props => props.fontUrl}");
     body {color: ${props => props.fontColor};}
+    html,body {margin: 0;padding: 0;background: #000;font-family: 'Roboto Slab', sans-serif; font-display: swap; font-weight: 500;overflow-x: hidden;}
     h1,h2 {display: inline-block;font-family: ${props => props.fontFamily};
     font-weight: ${props => props.fontWeight}; padding: 0; margin: 0;}
   `;

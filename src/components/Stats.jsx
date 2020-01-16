@@ -27,7 +27,7 @@ class Stats extends Component {
         </StatItem>
         <StatItem {...this.props}>
           <FontAwesomeIcon icon={faUserFriends} style={{ marginRight: '5px' }} />
-          {this.props.followers && this.props.followers.total.toLocaleString()}
+          {this.props.followers && this.props.user.followers.total.toLocaleString()}
         </StatItem>
       </StatsDiv>
     );

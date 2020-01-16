@@ -13,6 +13,12 @@ const Branding = styled.div`
   ${media.xl`font-size: 1.5em`};
 `;
 
+const LogoImg = styled.img`
+  height: 1.5em;
+  margin-top: 0.9em;
+  margin-left: 1em;
+`;
+
 class Brand extends Component {
   render() {
     return (
@@ -20,7 +26,7 @@ class Brand extends Component {
         {this.props.data.custom_name ? (
           <h1>{this.props.data.custom_name}</h1>
         ) : (
-          <h1>{this.props.data.twitch_channel}</h1>
+          <LogoImg src='./mrsir-icon.png' alt='MrSir2552' aria-label='MrSir2552' loading='lazy'></LogoImg>
         )}
         {this.props.stream[0] ? <Status {...this.props} /> : <span />}
       </Branding>

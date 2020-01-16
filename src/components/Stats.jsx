@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { faEye, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faEye, faUserFriends } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const StatsDiv = styled.ul`
@@ -10,10 +10,11 @@ const StatsDiv = styled.ul`
   margin: 0;
 `;
 const StatItem = styled.li`
-  margin: 0 10px;
+  margin: 0 5px;
   padding: 5px 8px;
   border-radius: 3px;
   background: ${props => props.data.accent_color};
+  font-size: 1.5em;
 `;
 
 class Stats extends Component {
@@ -25,7 +26,7 @@ class Stats extends Component {
           {this.props.user.view_count && this.props.user.view_count.toLocaleString()}
         </StatItem>
         <StatItem {...this.props}>
-          <FontAwesomeIcon icon={faUsers} style={{ marginRight: '5px' }} />
+          <FontAwesomeIcon icon={faUserFriends} style={{ marginRight: '5px' }} />
           {this.props.followers && this.props.followers.total.toLocaleString()}
         </StatItem>
       </StatsDiv>

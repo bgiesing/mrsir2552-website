@@ -42,7 +42,7 @@ class App extends Component {
       .get(`${this.state.url}users/follows?to_id=27101066`, {
         headers: { 'Client-ID': data.api_key },
       })
-      .then(res => this.setState({ followersInfo: res.data.data[1] }))
+      .then(res => this.setState({ followersInfo: res.data.total }))
       .catch(err => console.log(`Unable to fetch Twitch API ${err}`));
     document.title = `${data.twitch_channel} - ${data.site_title}`;
   }

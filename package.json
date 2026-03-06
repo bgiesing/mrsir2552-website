@@ -1,21 +1,21 @@
 {
   "author": {
-    "name": "Damine PLENARD",
-    "email": "damien@plenard.me",
-    "url": "https://github.com/damoun"
+    "name": "Brandon Giesing",
+    "email": "me@brandongiesing.com",
+    "url": "https://github.com/bgiesing"
   },
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/damoun/dam0un.live/issues"
+    "url": "https://github.com/bgiesing/mrsir2552-website/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/damoun/dam0un.live.git"
+    "url": "git+https://github.com/bgiesing/mrsir2552-website.git"
   },
-  "name": "dam0un-live",
+  "name": "mrsir2552-website",
   "version": "1.1.0",
   "description": "A website for my Twitch.tv channel",
-  "homepage": "http://dam0un.live",
+  "homepage": "http://mrsir2552.com",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -29,8 +29,8 @@
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@fortawesome/react-fontawesome": "^0.1.7",
-    "axios": "^0.19.0",
-    "gh-pages": "^2.1.1",
+    "axios": "^1.6.8",
+    "gh-pages": "^6.1.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-scripts": "3.2.0",

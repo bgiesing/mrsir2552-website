@@ -7,6 +7,6 @@ const Logo = styled.img`
   border-radius: 12px;
 `;
 
-const ChannelLogo = props => <Logo src={props.user.profile_image_url} alt="" />;
+const ChannelLogo = props => <Logo src="./mrsir-logo-white.png" alt="" />;
 
 export default ChannelLogo;
